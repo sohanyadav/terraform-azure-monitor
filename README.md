@@ -114,7 +114,7 @@ Replace **MIT** and **Cypik** with the appropriate license and your information.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|-----|:--------:|
+|------|-------------|------|---------|:--------:|
 | <a name="input_alias_sub"></a> [alias\_sub](#input\_alias\_sub) | Different subscription id for local provider(id of diff sub in which DNS zone is present). | `string` | `null` | no |
 | <a name="input_ampls_enabled"></a> [ampls\_enabled](#input\_ampls\_enabled) | Set to false to prevent the module from creating ampls resource. | `bool` | `true` | no |
 | <a name="input_azurerm_monitor_private_link_scope_id"></a> [azurerm\_monitor\_private\_link\_scope\_id](#input\_azurerm\_monitor\_private\_link\_scope\_id) | The id  of the monitor private link scope from which private dns will be created for it | `string` | `null` | no |
@@ -122,12 +122,12 @@ Replace **MIT** and **Cypik** with the appropriate license and your information.
 | <a name="input_diff_sub_location"></a> [diff\_sub\_location](#input\_diff\_sub\_location) | Location where different subscription resource should be created. | `string` | `""` | no |
 | <a name="input_diff_sub_resource_group_name"></a> [diff\_sub\_resource\_group\_name](#input\_diff\_sub\_resource\_group\_name) | A container that holds related different subscription resources for an Azure solution | `string` | `""` | no |
 | <a name="input_enable_private_endpoint"></a> [enable\_private\_endpoint](#input\_enable\_private\_endpoint) | enable or disable private endpoint to storage account | `bool` | `true` | no |
-| <a name="input_enabled"></a> [enabled](#input\_enabled) | Set to false to prevent the module from creating any resources. | `bool`| `true` | no |
-| <a name="input_environment"></a> [environment](#input\_environment) | Environment (e.g. `prod`, `dev`, `staging`). | `string` | `""`| no |
-| <a name="input_label_order"></a> [label\_order](#input\_label\_order) | Label order, e.g. `name`,`application`. | `list(any)` | `[]`| no |
+| <a name="input_enabled"></a> [enabled](#input\_enabled) | Set to false to prevent the module from creating any resources. | `bool` | `true` | no |
+| <a name="input_environment"></a> [environment](#input\_environment) | Environment (e.g. `prod`, `dev`, `staging`). | `string` | `""` | no |
+| <a name="input_label_order"></a> [label\_order](#input\_label\_order) | Label order, e.g. `name`,`application`. | `list(any)` | `[]` | no |
 | <a name="input_linked_resource_ids"></a> [linked\_resource\_ids](#input\_linked\_resource\_ids) | (Required) The name of the Azure Monitor Private Link Scoped Service. Changing this forces a new resource to be created. | `list(string)` | <pre>[<br>  ""<br>]</pre> | no |
 | <a name="input_location"></a> [location](#input\_location) | Location where resource should be created. | `string` | `""` | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'sohanyadav'. | `string` | `"example"`| no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'sohanyadav'. | `string` | `"example"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name  (e.g. `app` or `cluster`). | `string` | `""` | no |
 | <a name="input_private_dns_zones_names"></a> [private\_dns\_zones\_names](#input\_private\_dns\_zones\_names) | The name of the private dns zones from which private dns will be created for AMPLS | `list(string)` | <pre>[<br>  ""<br>]</pre> | no |
 | <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo | `string` | `"https://github.com/sohanyadav/terraform-azure-subnet.git"` | no |
